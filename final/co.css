@@ -1,0 +1,26 @@
+body{
+    background: #dee4e3;
+    
+}
+.co form  {
+    color: #dee4e3;
+}
+.co form input{
+    color: #139286;
+    border-radius: 5px;
+    display: inline-block;
+}
+.co{
+    background: #3334;
+    border-radius: 14px;
+    width: 25%;
+    padding: 20px;
+}
+body{
+    background-image: url(imgg/bg1.01.jpg);
+}
+.co form input[type=button]{
+    width: 40%;
+    padding: 8px;
+    background:#dee4e3; 
+}

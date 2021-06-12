@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   
+    
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        animation: animate 16s ease-in-out infinite;
+       
+      }
+       @keyframes animate{
+         5%, 100% {
+            background-image: url(imgg/mm.jpg);
+         }
+         15% {
+            background-image: url(imgg/dd.jpg);
+         }
+         30% {
+            background-image: url(imgg/gg.jpg);
+         }
+         45% {
+            background-image: url(imgg/ff.jpg);
+         }
+         60% {
+            background-image: url(imgg/t.jpg);
+         }
+         75% {
+            background-image: url(imgg/ii.jpg);
+         }
+         
+       }
+
+  </style>
+
+
+
+    <meta charset="utf-8">
+    <title>PharmaTech</title>
+     <link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+
+function validate()
+{
+var firstname=document.forms["register"]["fname"].value;
+var lastname=document.forms["register"]["lname"].value;
+var password=document.forms["register"]["pass1"].value;
+var confirm_password=document.forms["register"]["pass2"].value;
+
+if(firstname=="" || firstname.length<4){
+alert("Please  fill your firstname ,Length should be more than 4");
+return false;
+}
+if(lastname=="" || lastname.length<4){
+alert("Please  fill your lastname ,Length should be more than 4");
+return false;
+}
+if(password== "" || password.length<4)
+{
+alert("Please enter the password and character more than 4");
+return false;
+}
+if(confirm_password== "" || confirm_password.length<4)
+{
+alert("Please enter the password for confirmation and character more than 4");
+return false;
+}
+if(password!=confirm_password)
+{
+alert("Password didn't matched");
+return false;
+}
+}
+
+</script>
+  </head>
+  <body>
+    
+<!--
+      <div class="bi">
+      <img src="imgg/ff.jpg">
+          </div>
+-->
+    <div class="main">
+      <div class="login">
+          <div class="lt">
+        <img src="imgg/logo.png" id="logo" alt="">
+              <button>LOGIN</button>
+              </div>
+          <div class="EP">
+        <form>
+        <p>Email</p>
+      <input type="text" name="email" value=""required placeholder="Enter your Email">
+      <p>Password</p>
+      <input type="password" name="password" value="" required placeholder="Enter your Password"> <br><br>
+      <button onClick="myOnClickFn()">login</button>
+      <script>
+        function myOnClickFn(){
+          document.location.href="(2)home.html"
+        }
+ 
+      </script>
+     </form>
+      </div>
+          </div>
+        <br>
+
+      <div class="wrapper">
+<div class="img">
+<!--        <img src="imgg/doctor.jpg" id="doc" alt="" width="60%" height="100%">-->
+<!--        <hr>-->
+    </div>
+
+
+    
+      <div class="register" >
+        <h1>Creat a new Account</h1>
+     <form action="" method="POST" onsubmit="return validate()" method="post" >
+     <label for="">First Name</label> <br> <input type="text" name="fname" value="" required placeholder="Enter your First Name"> <br><br>
+     <label for="">Last Name</label> <br><input type="text" name="lname" value="" required placeholder="Enter your Last Name"><br><br>
+     <label for="">Email</label>  <br><input type="text" name="email" value="" required placeholder="Enter the Email "><br><br>
+     <label for="">Password</label><br><input type="password" name="pass1" value="" required placeholder="Enter the Password"> <br><br>
+     <label for="">Confirm Password</label><br><input type="password" name="pass2" value="" required placeholder="Confirm your Password"> <br><br>
+   <label for="">Date of Birth</label><br>
+   <select class="" name="day" required>
+<option value="Day">Day</option>
+<option value="Day">1</option>
+<option value="Day">2</option>
+<option value="Day">3</option>
+<option value="Day">4</option>
+<option value="Day">5</option>
+<option value="Day">6</option>
+<option value="Day">7</option>
+<option value="Day">8</option>
+<option value="Day">9</option>
+<option value="Day">10</option>
+<option value="Day">11</option>
+<option value="Day">12</option>
+<option value="Day">13</option>
+<option value="Day">14</option>
+<option value="Day">15</option>
+<option value="Day">16</option>
+<option value="Day">17</option>
+<option value="Day">18</option>
+<option value="Day">19</option>
+<option value="Day">20</option>
+<option value="Day">21</option>
+<option value="Day">22</option>
+<option value="Day">23</option>
+<option value="Day">24</option>
+<option value="Day">25</option>
+<option value="Day">26</option>
+<option value="Day">27</option>
+<option value="Day">28</option>
+<option value="Day">29</option>
+<option value="Day">30</option>
+<option value="Day">31</option>
+   </select>
+   <select class="" name="month"required>
+     <option value="month">Month</option>
+<option value="month">January</option>
+<option value="month">February</option>
+<option value="month">March</option>
+<option value="month">April</option>
+<option value="month">May</option>
+<option value="month">June</option>
+<option value="month">July</option>
+<option value="month">August</option>
+<option value="month">September</option>
+<option value="month">October</option>
+<option value="month">November</option>
+<option value="month">December</option>
+</select>
+<select class="" name="year" required>
+  <option value="Year">Year</option>
+<option value="Year">1990</option>
+<option value="Year">1991</option>
+<option value="Year">1992</option>
+<option value="Year">1993</option>
+<option value="Year">1994</option>
+<option value="Year">1995</option>
+<option value="Year">1996</option>
+<option value="Year">1997</option>
+<option value="Year">1998</option>
+<option value="Year">1999</option>
+<option value="Year">2000</option>
+<option value="Year">2001</option>
+<option value="Year">2002</option>
+<option value="Year">2003</option>
+<option value="Year">2004</option>
+<option value="Year">2005</option>
+<option value="Year">2006</option>
+<option value="Year">2007</option>
+<option value="Year">2008</option>
+<option value="Year">2009</option>
+<option value="Year">2010</option>
+<option value="Year">2011</option>
+<option value="Year">2012</option>
+<option value="Year">2013</option>
+<option value="Year">2014</option>
+<option value="Year">2015</option>
+<option value="Year">2016</option>
+<option value="Year">2017</option>
+<option value="Year">2018</option>
+<option value="Year">2019</option>
+<option value="Year">2020</option>
+</select>
+<br><br>
+
+     <label for="">Gender</label> <br> <input type="radio" name="gender" value="male" required> <span id="male">Male</span>   <input type="radio" name="gender" value="female" required> <span id="female">Female</span>
+<br>
+    <br> 
+    <!--<button onClick="myOnClickFn()" tpye="submit" name="button">Submit</button>
+    <script>
+      function myOnClickFn(){
+        
+        alert("You are registered successfully!");
+        document.location.href="med.html"
+      }
+
+    </script>-->
+    <button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("You are registered successfully!")) {
+    window.print="index.html"
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = print;
+}
+</script>
+
+     </form>
+      </div>
+
+          </div>
+    </div>
+    <script>
+      alert('PharmaTech');
+    </script>
+
+  </body>
+     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="login.js"></script>
+</html>
